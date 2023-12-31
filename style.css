@@ -199,3 +199,62 @@ header {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
+
+.skills {
+  color: #06a763;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-title h4 {
+  padding: 10px;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+.section-title span {
+  font-size: 2.18rem;
+  font-weight: 600;
+  align-self: center;
+  color: gray;
+}
+
+.skills {
+  background-color: #06a763;
+  color: white;
+  padding: 40px 40px 20px 40px;
+  margin-top: 30px;
+}
+
+.skills-container .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  color: white;
+}
+
+.skills-container .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.bar-bg {
+  width: 100%;
+  background-color: #05985a;
+  height: 5px;
+  margin-bottom: 20px;
+}
+
+.skills-container .bg-white {
+  background-color: white;
+}
