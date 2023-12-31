@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 370px;
+  background: url(./images/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  opacity: 0.9;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+  height: 100vh;
+}
+
+.container section {
+  background-color: #06a763;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  position: relative;
+  top: -200px;
+  display: flex;
+}
+
+#info {
+  width: 60%;
+  height: 80%;
+  align-self: center;
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+  line-height: 110%;
+  padding-left: 50px;
+}
+
+#info h4 {
+  margin: 1.14rem 0 0.912rem 0;
+  font-weight: 600;
+  font-size: 2.18rem;
+}
+
+#info h6 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+#details {
+  margin-top: 40px;
+  width: 60%;
+}
+
+#details div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px;
+}
+
+#links {
+  margin-top: 20px;
+}
+
+#links a {
+  text-decoration: none;
+}
+
+#links a p {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#links a p i {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#image img {
+  width: auto;
+  height: 100%;
+}
+.slant {
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  border-style: solid;
+  border-width: 400px 0 0 100px;
+  border-color: rgba(223, 50, 50, 0) transparent transparent #06a763;
+}
