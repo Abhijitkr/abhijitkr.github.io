@@ -82,6 +82,7 @@ header {
 
 #links {
   margin-top: 20px;
+  user-select: none;
 }
 
 #links a {
@@ -139,10 +140,10 @@ header {
   padding: 20px;
   width: 100%;
   text-align: center;
+  user-select: none;
 }
 
 .resume button {
-  padding: 8px;
   margin: 7px 7px;
   background: #06a763;
   color: #fff;
@@ -152,7 +153,7 @@ header {
   padding: 6px 12px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.42857143;
+  line-height: 2;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -183,7 +184,7 @@ header {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-animation::after {
+/* .btn-animation::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -194,7 +195,7 @@ header {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-}
+} */
 
 .btn-animation:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -354,4 +355,90 @@ header {
 
 .card-content p {
   margin-top: 10px;
+}
+
+.portfolio-section {
+  margin-top: 30px;
+  /* height: auto; */
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: 47%;
+  box-sizing: border-box;
+  margin: 0 0.75rem;
+  margin-bottom: 1rem;
+  height: auto;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.background-group {
+  position: relative;
+  background-color: #ccc;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.item-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 600 / 300;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.button-group {
+  user-select: none;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  /* background-color: #1976d2; */
+}
+
+.background-group a {
+  text-decoration: none;
+}
+
+.button-group a p {
+  width: 50px;
+  height: 50px;
+  background-color: #06a763;
+}
+
+.button-group a p i {
+  font-size: 25px;
+}
+
+figcaption {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
+.github {
+  cursor: pointer;
 }
