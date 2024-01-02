@@ -21,6 +21,11 @@ function scrollToTop() {
   });
 }
 
+function scrollToSection() {
+  var section = document.getElementById("contact");
+  section.scrollIntoView({ behavior: "smooth" });
+}
+
 window.onscroll = function () {
   var scrollButton = document.getElementById("scrollBtn");
 
@@ -29,4 +34,11 @@ window.onscroll = function () {
   } else {
     scrollButton.classList.remove("show"); // Hide the button
   }
+};
+
+window.onload = function () {
+  document.getElementById("first_name").value = "";
+  document.getElementById("sub").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("textarea1").value = "";
 };
