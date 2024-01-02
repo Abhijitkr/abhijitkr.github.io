@@ -185,19 +185,6 @@ header {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* .btn-animation::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-} */
-
 .btn-animation:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
@@ -505,8 +492,9 @@ figcaption {
   margin-top: 1rem;
   margin-bottom: 12px;
 }
+
 .input-field input,
-textarea {
+.input-field textarea {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid gainsboro;
@@ -546,11 +534,21 @@ textarea {
   transition: 0.2s opacity ease-out, 0.2s color ease-out;
 }
 
+/* .input-field input:valid + label,
+.input-field textarea:valid + label, */
+.input-field input.filled + label,
+.input-field textarea.filled + label,
 .input-field input:focus + label,
 .input-field textarea:focus + label {
   color: #1976d2;
   font-size: 0.8rem;
   transform: translateY(-140%);
+}
+
+.input-field input:focus:not([readonly]),
+.input-field textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #1976d2;
+  box-shadow: 0 1px 0 0 #1976d2;
 }
 
 .input-field textarea {
@@ -560,4 +558,8 @@ textarea {
 .contact-send {
   display: flex;
   justify-content: center;
+}
+
+.contact-send button {
+  font-size: 17px;
 }
