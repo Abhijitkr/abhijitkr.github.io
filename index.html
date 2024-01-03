@@ -31,15 +31,18 @@
     <i class="fas fa-times" id="cancel"></i>
   </label>
   <div class="sidebar">
-    <header>Abhijit Kumar Mahato</header>
+    <div>
+      <img src="./images/my pic.jpg" alt="My Pic" width="100" height="100">
+      <header>Abhijit Kumar Mahato</header>
+    </div>
     <ul>
-      <li><a href="#hero"><i class="fas fa-qrcode"></i>Home</a></li>
-      <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
-      <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
-      <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
-      <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
-      <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
-      <li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+      <li><a onclick="scrollToSection('hero')"><i class="fa fa-user"></i>Home</a></li>
+      <li><a onclick="scrollToSection('about')"><i class="fa fa-question-circle"></i>ABOUT</a></li>
+      <li><a onclick="scrollToSection('skills')"><i class="fa fa-sliders"></i>SKILLS</a></li>
+      <li><a onclick="scrollToSection('education')"><i class="fa fa-graduation-cap"></i>EDUCATION</a></li>
+      <li><a onclick="scrollToSection('portfolio')"><i class="fa fa-archive"></i>PORTFOLIO</a></li>
+      <li><a onclick="scrollToSection('tech-stuffs')"><i class="fa fa-cloud"></i>TECH-STUFF</a></li>
+      <li><a onclick="scrollToSection('contact')"><i class="fa fa-envelope"></i>CONTACT</a></li>
     </ul>
   </div>
 </aside>
@@ -105,7 +108,7 @@
         </div>
       </section>
 
-      <section class="card card-description">
+      <section class="card card-description" id="about">
         <div class="summary">
           <p>Hey! I'm Abhijit Kumar Mahato, a proactive Software Engineer passionate about crafting seamless user
             experiences. I've dived into the <strong>MERN</strong> stack, specializing in <strong>React.js, Redux
@@ -125,11 +128,11 @@
         </div>
         <div class="resume">
           <button class="btn-animation">DOWNLOAD RESUME</button>
-          <button onclick="scrollToSection()" class="btn-animation">CONTACT ME</button>
+          <button onclick="scrollToSection('contact')" class="btn-animation">CONTACT ME</button>
         </div>
       </section>
 
-      <section>
+      <section id="skills">
         <div class="section-title">
           <h4>
             <img src="images/mixer.png" alt="" width="50px">
@@ -238,7 +241,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="education">
         <div class="section-title">
           <h4>
             <img src="images/book.png" alt="" width="50px">
@@ -382,7 +385,7 @@
       </section>
 
 
-      <section>
+      <section id="portfolio">
         <div class="section-title">
           <h4>
             <img src="images/safe.png" alt="" width="50px">
@@ -594,7 +597,7 @@
       </section>
 
 
-      <section>
+      <section id="tech-stuffs">
         <div class="section-title">
           <h4>
             <img src="images/lightning.png" alt="" width="50px">
