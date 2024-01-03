@@ -179,12 +179,16 @@ aside {
   border-radius: 100%;
 }
 
+.sidebar div header {
+  font-size: 20px;
+}
+
 .sidebar ul a {
   display: block;
   height: 100%;
   width: 100%;
   line-height: 65px;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   box-sizing: border-box;
   border-bottom: 1px solid black;

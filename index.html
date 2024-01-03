@@ -14,6 +14,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- material-icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- aos Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="script.js"></script>
 
@@ -22,52 +24,51 @@
 
 <body>
 
-      <div id="loading">
-          <div id="loading-center">
-              <div id="loading-center-absolute">
-                  <div class="box-holder animated bounceInDown">
-                      <span class="load-box">
-                          <span class="box-inner"></span>
-                      </span>
-                  </div>
-                  <!-- NAME & STATUS -->
-                  <div class="text-holder text-center">
-                      <h2>Abhijit Kumar Mahato</h2>
-                      <h6>Web Developer</h6>
-                  </div>
-              </div>
-          </div>
+  <div id="loading">
+    <div id="loading-center">
+      <div id="loading-center-absolute">
+        <div class="box-holder animated bounceInDown">
+          <span class="load-box">
+            <span class="box-inner"></span>
+          </span>
+        </div>
+        <!-- NAME & STATUS -->
+        <div class="text-holder text-center">
+          <h2>Abhijit Kumar Mahato</h2>
+          <h6>Web Developer</h6>
+        </div>
       </div>
-
-<aside>
-  <input type="checkbox" id="check">
-  <label for="check">
-    <i class="fas fa-bars" id="btn"></i>
-    <i class="fas fa-times" id="cancel"></i>
-  </label>
-  <div class="sidebar">
-    <div>
-      <img src="./images/my pic.jpg" alt="My Pic" width="100" height="100">
-      <header>Abhijit Kumar Mahato</header>
     </div>
-    <ul>
-      <li><a onclick="scrollToSection('hero')"><i class="fa fa-user"></i>Home</a></li>
-      <li><a onclick="scrollToSection('about')"><i class="fa fa-question-circle"></i>ABOUT</a></li>
-      <li><a onclick="scrollToSection('skills')"><i class="fa fa-sliders"></i>SKILLS</a></li>
-      <li><a onclick="scrollToSection('education')"><i class="fa fa-graduation-cap"></i>EDUCATION</a></li>
-      <li><a onclick="scrollToSection('portfolio')"><i class="fa fa-archive"></i>PORTFOLIO</a></li>
-      <li><a onclick="scrollToSection('tech-stuffs')"><i class="fa fa-cloud"></i>TECH-STUFF</a></li>
-      <li><a onclick="scrollToSection('contact')"><i class="fa fa-envelope"></i>CONTACT</a></li>
-    </ul>
   </div>
-</aside>
 
+  <aside>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <div>
+        <img src="./images/my pic.jpg" alt="My Pic" width="100" height="100">
+        <header>Abhijit Kumar Mahato</header>
+      </div>
+      <ul>
+        <li><a onclick="scrollToSection('hero')"><i class="fa fa-user"></i>Home</a></li>
+        <li><a onclick="scrollToSection('about')"><i class="fa fa-question-circle"></i>ABOUT</a></li>
+        <li><a onclick="scrollToSection('skills')"><i class="fa fa-sliders"></i>SKILLS</a></li>
+        <li><a onclick="scrollToSection('education')"><i class="fa fa-graduation-cap"></i>EDUCATION</a></li>
+        <li><a onclick="scrollToSection('portfolio')"><i class="fa fa-archive"></i>PORTFOLIO</a></li>
+        <li><a onclick="scrollToSection('tech-stuffs')"><i class="fa fa-cloud"></i>TECH-STUFF</a></li>
+        <li><a onclick="scrollToSection('contact')"><i class="fa fa-envelope"></i>CONTACT</a></li>
+      </ul>
+    </div>
+  </aside>
 
   <section>
     <header id="hero"></header>
     <div class="container">
 
-      <section class="card " id="intro-container">
+      <section class="card " id="intro-container" data-aos="zoom-in-up">
         <div class="intro">
           <h4>Abhijit Kumar Mahato</h4>
           <h6>Web Developer</h6>
@@ -123,7 +124,7 @@
         </div>
       </section>
 
-      <section class="card card-description" id="about">
+      <section class="card card-description" id="about" data-aos="zoom-in" data-aos-delay="100">
         <div class="summary">
           <p>Hey! I'm Abhijit Kumar Mahato, a proactive Software Engineer passionate about crafting seamless user
             experiences. I've dived into the <strong>MERN</strong> stack, specializing in <strong>React.js, Redux
@@ -148,14 +149,14 @@
       </section>
 
       <section id="skills">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in-up">
           <h4>
             <img src="images/mixer.png" alt="" width="50px">
           </h4>
           <span>SKILLS</span>
         </div>
 
-        <div class="card card-description skills">
+        <div class="card card-description skills" data-aos="zoom-in-up" data-aos-delay="50">
           <div class="skills-container">
             <div class="grid">
               <div>
@@ -257,14 +258,14 @@
       </section>
 
       <section id="education">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in-up">
           <h4>
             <img src="images/book.png" alt="" width="50px">
           </h4>
           <span>EDUCATION</span>
         </div>
         <div class="education-section">
-          <div class="uni-section">
+          <div class="uni-section" data-aos="zoom-in" data-aos-delay="50">
 
             <div class="education-content right-bar">
               <div class="card-content">
@@ -294,16 +295,16 @@
 
               </div>
             </div>
-            <p class="link-bg" id="graduate">
+            <p class="link-bg" id="graduate" data-aos="zoom-in" data-aos-delay="50">
               <i class="fa fa-graduation-cap"></i>
             </p>
             <div class="right-content"></div>
 
           </div>
-          <div class="uni-section" style="margin-top: -130px">
+          <div class="uni-section" style="margin-top: -130px" data-aos="zoom-in">
             <div class="right-content"></div>
 
-            <p class="link-bg" id="graduate">
+            <p class="link-bg" id="graduate" data-aos="zoom-in">
               <i class="fa fa-graduation-cap"></i>
             </p>
             <div class="education-content left-bar">
@@ -339,7 +340,7 @@
             </div>
 
           </div>
-          <div class="uni-section" style="margin-top: -100px">
+          <div class="uni-section" style="margin-top: -100px" data-aos="zoom-in">
 
             <div class="education-content right-bar">
               <div class="card-content">
@@ -362,16 +363,16 @@
 
               </div>
             </div>
-            <p class="link-bg" id="graduate">
+            <p class="link-bg" id="graduate" data-aos="zoom-in">
               <i class="fa fa-graduation-cap"></i>
             </p>
             <div class="right-content"></div>
 
           </div>
-          <div class="uni-section">
+          <div class="uni-section" data-aos="zoom-in">
             <div class="right-content"></div>
 
-            <p class="link-bg" id="graduate">
+            <p class="link-bg" id="graduate" data-aos="zoom-in">
               <i class="fa fa-graduation-cap"></i>
             </p>
             <div class="education-content left-bar">
@@ -401,14 +402,14 @@
 
 
       <section id="portfolio">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in">
           <h4>
             <img src="images/safe.png" alt="" width="50px">
           </h4>
           <span>PORTFOLIO</span>
         </div>
 
-        <div class="portfolio-section">
+        <div class="portfolio-section" data-aos="zoom-in" data-aos-delay="50">
 
           <div class="portfolio">
             <div class="portfolio-item">
@@ -613,14 +614,14 @@
 
 
       <section id="tech-stuffs">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in">
           <h4>
             <img src="images/lightning.png" alt="" width="50px">
           </h4>
           <span>TECH STUFF</span>
         </div>
 
-        <div class="tech-section">
+        <div class="tech-section" data-aos="zoom-in" data-aos-delay="50">
           <div class="tech-child">
             <div class="tech-title">
               <p>WEB TECHNOLOGIES</p>
@@ -661,14 +662,14 @@
       </section>
 
       <section id="contact">
-        <div class="section-title">
+        <div class="section-title" data-aos="zoom-in">
           <h4>
             <img src="images/envelope.png" alt="" width="50px">
           </h4>
           <span>CONTACT</span>
         </div>
 
-        <div class="contact-section">
+        <div class="contact-section" data-aos="zoom-in" data-aos-delay="50">
 
           <div class="form-section">
             <form id="contact-form" name="c-form" action="https://api.web3forms.com/submit" method="POST">
@@ -732,8 +733,12 @@
 
 
 
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  <script>
+    AOS.init({ offset: 50, duration: 750, easing: 'ease-in-out', }
+    );
+  </script>
 </body>
-<script src="https://web3forms.com/client/script.js" async defer></script>
 
 </html>

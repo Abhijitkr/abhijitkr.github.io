@@ -1,22 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // FADES OUT PRE-LOADER
   var loadingDiv = document.querySelector("div#loading");
   if (loadingDiv) {
-    loadingDiv.style.transition = "opacity 1s"; // Changed the duration to 1 second
+    loadingDiv.style.transition = "opacity 1s";
     loadingDiv.style.opacity = "0";
     setTimeout(function () {
       loadingDiv.style.display = "none";
-    }, 1000); // Adjusted the timeout to match the duration
+    }, 1000);
   }
 
-  // SCROLL ANIMATION
-  window.sr = ScrollReveal({ reset: false }); // reset false stops repetition of animation
+  window.sr = ScrollReveal({ reset: false });
   var commonCards =
     "#port-add-icon,#map-card,.interest-icon-even,.interest-icon," +
     ".timeline-dot,.timeline-content,#add-more,#skills-card,#testimonials-card," +
     "#portfolios-card,#interest-card,#p-one,#p-two,#p-three,#blog-card,#contact-card,#clients,.section-title img";
 
-  // Customizing a reveal set
   sr.reveal(commonCards, { duration: 1100 });
   sr.reveal("#about-card,.map-label", { duration: 1400, delay: 500 });
   sr.reveal("#v-card-holder", { duration: 1400, distance: "150px" });
