@@ -420,6 +420,10 @@ section {
   border: 1px solid transparent;
 }
 
+.resume a {
+  text-decoration: none;
+}
+
 .btn-animation:link,
 .btn-animation:visited {
   text-transform: uppercase;
