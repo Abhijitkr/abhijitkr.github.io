@@ -253,11 +253,8 @@ label #cancel {
   margin-left: 250px;
 }
 
-section {
-  background: url(bg.jpeg) no-repeat;
-  background-position: center;
-  background-size: cover;
-  transition: all 0.5s;
+main {
+  width: 100%;
 }
 
 #hero {
@@ -618,7 +615,7 @@ section {
 }
 
 .portfolio-item {
-  width: 47%;
+  width: 30%;
   box-sizing: border-box;
   margin: 0 0.75rem;
   margin-bottom: 1rem;
@@ -668,9 +665,10 @@ section {
 }
 
 .button-group a p {
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   background-color: #06a763;
+  padding: 20px;
 }
 
 .button-group a p i {
@@ -681,10 +679,11 @@ figcaption {
   color: white;
   position: absolute;
   bottom: 10px;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+  text-align: center;
 }
 
 .github {
