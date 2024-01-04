@@ -255,6 +255,9 @@ label #cancel {
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    width: 90vw !important;
+  }
   #intro-container {
     position: relative;
     width: 100%;
@@ -269,9 +272,9 @@ label #cancel {
   .intro h4,
   .intro h6,
   #details {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
-    margin-top: 38px;
+    margin: auto;
   }
   .intro h6 {
     margin: 0;
@@ -298,27 +301,17 @@ label #cancel {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
       0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
-  #details {
-    display: table;
-    margin: 0 auto;
-    max-width: 100%;
-    padding: 0;
-  }
 
-  #details div span {
-    text-align: start;
+  #details div {
+    justify-content: center;
   }
 
   #links {
-    display: table;
-    max-width: 100%;
-    padding: 0;
-    margin: 0 auto 9px;
+    margin: auto;
   }
-
-  /* .skills-container .grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  } */
+  .skills-container .item {
+    flex: 1 0 40% !important;
+  }
 }
 
 #hero {
@@ -551,15 +544,11 @@ label #cancel {
 }
 
 .skills-container .grid {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
-  /* gap: 16px; */
-  /* color: white; */
   display: flex;
   flex-wrap: wrap;
 }
 
-.skills-container .item {
+.skills-container .grid .item {
   flex: 1 0 30%;
   margin-right: 20px;
 }
