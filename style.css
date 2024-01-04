@@ -312,6 +312,45 @@ label #cancel {
   .skills-container .item {
     flex: 1 0 40% !important;
   }
+
+  .uni-section::before {
+    display: none;
+  }
+
+  .uni-section::after {
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    height: 20px;
+    width: 4px;
+    background-color: #95d6bb;
+    z-index: -999 !important;
+  }
+  #graduate {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+  }
+  .education-content {
+    width: 100% !important;
+  }
+
+  .uni-section:last-child {
+    margin-top: 20px;
+  }
+
+  .neg-130,
+  .neg-100 {
+    margin-top: 20px !important;
+  }
+
+  .filler,
+  .uni-section:first-child::after,
+  .right-bar::before,
+  .left-bar::before {
+    display: none;
+  }
 }
 
 #hero {
@@ -614,7 +653,7 @@ label #cancel {
   margin: 0;
 }
 
-.right-content {
+.filler {
   width: 45%;
 }
 
@@ -626,6 +665,13 @@ label #cancel {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   border-left: #1976d2 5px solid;
   position: relative;
+}
+
+.neg-130 {
+  margin-top: -130px;
+}
+.neg-100 {
+  margin-top: -100px;
 }
 
 .right-bar::before {
@@ -729,8 +775,6 @@ label #cancel {
 }
 
 .button-group a p {
-  /* width: 50px;
-  height: 50px; */
   background-color: #06a763;
   padding: 20px;
 }
@@ -755,7 +799,6 @@ figcaption {
 }
 
 .tech-section {
-  /* margin-top: 30px; */
   display: flex;
 }
 
