@@ -315,22 +315,10 @@ label #cancel {
     padding: 0;
     margin: 0 auto 9px;
   }
-  /* #intro-container .intro {
-    position: absolute;
-    bottom: 85%;
-    left: 0;
-    width: 150px;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 1;
-    background-color: transparent;
-  }
-  .intro {
-    padding: 10px;
-  }
 
-   */
+  /* .skills-container .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  } */
 }
 
 #hero {
@@ -563,24 +551,30 @@ label #cancel {
 }
 
 .skills-container .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  color: white;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  /* gap: 16px; */
+  /* color: white; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.skills-container .flex {
+.skills-container .item {
+  flex: 1 0 30%;
+  margin-right: 20px;
+}
+
+.bar-text {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .bar-bg {
   width: 100%;
   background-color: #05985a;
   height: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .skills-container .bg-white {
