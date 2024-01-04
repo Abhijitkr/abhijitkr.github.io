@@ -351,6 +351,15 @@ label #cancel {
   .left-bar::before {
     display: none;
   }
+
+  .portfolio-item {
+    width: 46% !important;
+  }
+
+  .tech-child,
+  .contact-child {
+    margin: 30px 20px !important;
+  }
 }
 
 #hero {
@@ -714,7 +723,6 @@ label #cancel {
 
 .portfolio-section {
   margin-top: 30px;
-  /* height: auto; */
 }
 
 .portfolio {
@@ -767,7 +775,6 @@ label #cancel {
   display: flex;
   justify-content: space-around;
   width: 50%;
-  /* background-color: #1976d2; */
 }
 
 .background-group a {
