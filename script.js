@@ -43,9 +43,12 @@ function scrollToTop() {
   });
 }
 
-function scrollToSection(id) {
-  var section = document.getElementById(id);
+function scrollToSection(sectionId) {
+  const checkbox = document.getElementById("check");
+  const section = document.getElementById(sectionId);
   section.scrollIntoView({ behavior: "smooth" });
+  checkbox.checked = false;
+  checkbox.dispatchEvent(new Event("change"));
 }
 
 window.onscroll = function () {

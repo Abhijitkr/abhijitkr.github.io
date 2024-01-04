@@ -4,11 +4,9 @@
 }
 body {
   font-family: "Muli", sans-serif;
-  /* overflow-x: hidden; */
 }
 
 #loading {
-  /*pre-loader*/
   background-color: #06a763;
   height: 100%;
   width: 100%;
