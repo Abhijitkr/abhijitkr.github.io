@@ -76,10 +76,10 @@ const filterableCards = document.querySelectorAll(
 const filterCards = (e) => {
   document.querySelector("#filter-buttons .active").classList.remove("active");
   e.target.classList.add("active");
-
   filterableCards.forEach((card) => {
+    const dataNames = card.dataset.name;
     if (
-      card.dataset.name === e.target.dataset.filter ||
+      dataNames.includes(e.target.dataset.filter) ||
       e.target.dataset.filter === "all"
     ) {
       return card.classList.replace("hide", "show");
