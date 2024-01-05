@@ -619,6 +619,7 @@ label #cancel {
   margin: 20px;
   text-align: center;
   padding: 10px;
+  user-select: none;
 }
 
 #filter-buttons button {
@@ -630,6 +631,7 @@ label #cancel {
   font-size: 15px;
   line-height: 0;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 #filter-buttons button:hover {
@@ -643,6 +645,10 @@ label #cancel {
 
 #filterable-cards .portfolio-item.hide {
   display: none;
+}
+
+#filterable-cards .portfolio-item.show {
+  animation: fadeIn 0.7s ease-in-out;
 }
 
 .portfolio {

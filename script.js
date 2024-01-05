@@ -82,9 +82,12 @@ const filterCards = (e) => {
       dataNames.includes(e.target.dataset.filter) ||
       e.target.dataset.filter === "all"
     ) {
-      return card.classList.replace("hide", "show");
+      card.classList.remove("hide");
+      card.classList.add("show");
+    } else {
+      card.classList.remove("show");
+      card.classList.add("hide");
     }
-    card.classList.add("hide");
   });
 };
 
