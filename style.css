@@ -615,6 +615,36 @@ label #cancel {
   margin-top: 30px;
 }
 
+#filter-buttons {
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+#filter-buttons button {
+  border-radius: 3px;
+  background: #fff;
+  border-color: transparent;
+  height: 45px;
+  padding: 10px 15px;
+  font-size: 15px;
+  line-height: 0;
+  margin-right: 15px;
+}
+
+#filter-buttons button:hover {
+  background: #ddd;
+}
+
+#filter-buttons button.active {
+  color: #fff;
+  background: #06a763;
+}
+
+#filterable-cards .portfolio-item.hide {
+  display: none;
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
