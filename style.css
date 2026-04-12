@@ -508,7 +508,7 @@ label #cancel {
   background-color: white;
 }
 
-.education-section {
+.education-section, .experience-section {
   margin-top: 30px;
 }
 
@@ -556,7 +556,7 @@ label #cancel {
   width: 45%;
 }
 
-.education-content {
+.education-content, .experience-content {
   color: gray;
   padding: 15px;
   width: 45%;
@@ -1007,7 +1007,7 @@ footer {
     right: 30px;
     top: 15px;
   }
-  .education-content {
+  .education-content, .experience-content {
     width: 100% !important;
   }
 
@@ -1127,7 +1127,7 @@ footer {
     flex: 1 0 100% !important;
   }
 
-  .uni-section::before {
+  .uni-section::before, .work-section::before {
     display: none;
   }
 
@@ -1141,12 +1141,24 @@ footer {
     background-color: #95d6bb;
     z-index: -999 !important;
   }
+
+  .work-section::after {
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    height: 20px;
+    width: 4px;
+    background-color: #95d6bb;
+    z-index: -999 !important;
+  }
+
   #graduate {
     position: absolute;
     right: 30px;
     top: 15px;
   }
-  .education-content {
+  .education-content, .experience-content {
     width: 100% !important;
   }
 
